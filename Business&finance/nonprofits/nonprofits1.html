@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="../../css/style.css"/>
+
+
+<body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">اعلى</button>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+  <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">اغلاق &times;</button>
+      <input class="w3-input w3-padding " style=" border-radius:25px;text-align: right;" type="text" placeholder="..البحث" id="myInput" onkeyup="filterFunction()">
+
+
+  <a href="../investing.html" class="w3-bar-item w3-button w3-large">الاستثمار</a>
+  <a href="../stocks.html" class="w3-bar-item w3-button w3-large">الاسهم والمؤشرات</a>
+  <a style="display:none" href="#" class="w3-bar-item w3-button w3-large">التصنيع المتقدم والانتاج</a>
+  <a style="display:none"href="#" class="w3-bar-item w3-button w3-large">الزراعة والاغذية والمشروبات</a>
+  <a style="display:none"href="#" class="w3-bar-item w3-button w3-large">بلوكشين</a>
+  <a style="display:none" href="#" class="w3-bar-item w3-button w3-large">الاقتصاد الرقمي</a>
+  <a style="display:none"href="#" class="w3-bar-item w3-button w3-large">التأمين</a>
+  <a href="../trade.html" class="w3-bar-item w3-button w3-large">التجارة</a>
+  <a style="display:none" href="#" class="w3-bar-item w3-button w3-large">تقدم الاقتصاد</a>
+  <a style="display:none"href="#" class="w3-bar-item w3-button w3-large">التقنيات الناشئة</a>
+  <a style="display:none"href="#" class="w3-bar-item w3-button w3-large">التكنولجيا المالية</a>
+  <a href="../cryptocurrency.html" class="w3-bar-item w3-button w3-large">العملات المشفرة</a>
+  <a href="../energy.html" class="w3-bar-item w3-button w3-large">الطاقة</a>
+  <a href="../circulareconomy.html" class="w3-bar-item w3-button w3-large">دائرة الاقتصاد</a>
+  <a style="display:none"href="#" class="w3-bar-item w3-button w3-large">المدن والعمران</a>
+  <a style="display:none"href="#" class="w3-bar-item w3-button w3-large">التنوع والتضمين</a>
+  <a style="display:none"href="#" class="w3-bar-item w3-button w3-large">تقدم الاقتصاد</a>
+  <a href="../financialsystems.html" class="w3-bar-item w3-button w3-large">الانظمة المالية والنقدية</a>
+  <a style="display:none"href="#" class="w3-bar-item w3-button w3-large">الاتصالات</a>
+  <a href="../businessnews.html" class="w3-bar-item w3-button w3-large">اخبار الاعمال</a>
+  <a href="../reports.html" class="w3-bar-item w3-button w3-large">التقارير</a>
+  <a href="../nonprofits.html" class="w3-bar-item w3-button w3-large">المنظمات غير الربحية</a>
+  <a style="display:none"href="#" class="w3-bar-item w3-button w3-large">اعمال صغيرة</a>
+  <a style="display:none"href="#" class="w3-bar-item w3-button w3-large">الخدمات المالية</a>
+  <a style="display:none"href="#" class="w3-bar-item w3-button w3-large">تسلا موتورز</a>
+  <a style="display:none" href="#" class="w3-bar-item w3-button w3-large">راس المال الاستثماري</a>
+  <a style="display:none"href="#" class="w3-bar-item w3-button w3-large">شخصيات الاعمال</a>
+  <a style="display:none"href="#" class="w3-bar-item w3-button w3-large">محاسبة</a>
+ <a style="display:none"href="#" class="w3-bar-item w3-button  w3-large">وسائل الاعلام التجارية</a>
+  <a style="display:none"href="#" class="w3-bar-item w3-button w3-large">الشركات الناشئة</a>
+
+</div>
+
+
+
+<a href="index.html">
+  <div class="w3-container w3-white">
+  
+  
+   
+    <div class="w3-container" style="margin-top:18px;float:right;">
+      <span class="w3-tag w3-xlarge w3-yellow">ADM</span>
+    
+      <span class="w3-tag w3-xlarge w3-blue ">TRENDS</span>
+      
+    
+
+
+  </div>
+</a>
+
+
+
+
+<div class="scrollmenu" style="margin-top:80px; ">
+
+
+  <a style="display:none" href="../../../web/index.html"class="btn">English</a>
+  <a style="display:none" href="../../careers.html"class="btn">الوظائف</a>
+  <a href="../../entertainment.html"class="btn">الترفيه</a>
+  <a href="../../animals.html"class="btn">الحيوانات والطبيعة</a>
+  <a href="../../celebrities.html"class="btn">المشاهير</a>
+  <a style="display:none" href="../../education.html"class="btn">التعليم</a>
+  <a href="../../comics.html"class="btn">الكاركتير والكوميديا</a>
+  <a href="../../science.html"class="btn">العلوم</a>
+  <a href="../../travel.html"class="btn">السفر</a>
+  <a href="../../food.html"class="btn">الطهى</a>
+  <a href="../../gaming.html"class="btn">الالعاب</a>
+  <a href="../../fitness.html"class="btn" >اللياقة البدنية</a>
+  <a href="../../music.html"class="btn" >الموسيفى</a>
+  <a href="../../Business&finance.html"class="btn active" >المال والاعمال</a>
+  <a href="../../market.html"class="btn" >التسوق</a>
+  <a href="../../arts.html"class="btn" >الفنون</a>
+  <a href="../../sport.html"class="btn" >الرياضة</a> 
+  <a href="../../movies.html"class="btn" >الافلام</a> 
+  <a href="../../fashion.html" class="btn">الموضة والجمال</a>
+  <a href="../../technology.html" class="btn ">التكنولوجيا</a>
+  <a href="../../index.html" class="btn " >الرئيسية</a>
+
+  <button class="w3-button w3-black w3-large w3-border-right" style="margin-left:6px;margin-bottom:2px;border-radius:10px; " onclick="openRightMenu()">&#9776;</button>
+
+</div>
+
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("scrollmenu");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+
+
+
+
+
+
+
+
+
+<div class="row">
+
+
+  <div class="a">  
+    <div class="w3-container" style="float:right;margin-top: 50px;">
+  
+      <span class="w3-tag w3-xxlarge w3-yellow">مشاهدة</span>
+      <span class="w3-tag w3-xxlarge w3-blue">الاكثر</span>
+      
+      </div>
+
+
+
+      <iframe style="border:none;width: 100%;height: 400%; " scrolling="no"  src="../../links/links1.html"></iframe>
+
+  </div>
+
+
+<div class="b">
+	<div class="w3-container" style="text-align:center;margin-top:12px;">
+		<span class="w3-tag w3-xxlarge w3-green">المنظمات غير الربحية</span>
+
+	
+</div>
+
+
+
+<div class="card3">
+  <iframe  src="https://www.youtube.com/embed/L7-OTrOv5J8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+
+<a href="nonprofits1.html">
+<img src="photos/nonprofits1.jpg" alt="Avatar" style="width:60px;float:right;margin-top: 10px;margin-left: 2px;">
+</a>
+
+<h3 style="text-align:right;margin-right:70px;">
+  "اجيال السلام" الأولى عربيا و25 عالميا كأفضل منظمة اجتماعية خيرية
+
+
+</h3>
+
+
+
+<p>
+
+  حصدت هيئة أجيال السلام المركز 25 على مستوى العالم، ضمن قائمة “سوشال جود أدفايزر لأفضل 200 منظمة اجتماعية خيرية حول العالم
+
+  لتتقدم بذلك نقطة واحدة، حيث كانت حققت المرتبة 26 في العام 2021.
+  وحافظت أجيال السلام وهي منظمة غير ربحية،على ترتيبها في المركز الأول على مستوى العالم العربي كأفضل منظمة اجتماعية خيرية، والمركز الثالث على مستوى العالم ضمن قائمة “سوشال جود” لأفضل المنظمات المتخصصة في مجال بناء السلام.
+
+</p>
+
+<br>
+
+	
+
+			<!-- Sharingbutton Facebook -->
+<a class="resp-sharing-button__link"    href="https://facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=L7-OTrOv5J8" target="_blank" rel="noopener" aria-label="Share on Facebook">
+  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm3.6 11.5h-2.1v7h-3v-7h-2v-2h2V8.34c0-1.1.35-2.82 2.65-2.82h2.35v2.3h-1.4c-.25 0-.6.13-.6.66V9.5h2.34l-.24 2z"/></svg>
+    </div>شارك</div>
+</a>
+	
+
+<!-- Sharingbutton Twitter -->
+	
+<a class="resp-sharing-button__link " href="https://twitter.com/intent/tweet/?text=أجيال السلام الأولى عربيا و25 عالميا كأفضل منظمة اجتماعية خيرية&amp;url=https://www.youtube.com/watch?v=L7-OTrOv5J8" target="_blank" rel="noopener" aria-label="Share on Twitter">
+  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm5.26 9.38v.34c0 3.48-2.64 7.5-7.48 7.5-1.48 0-2.87-.44-4.03-1.2 1.37.17 2.77-.2 3.9-1.08-1.16-.02-2.13-.78-2.46-1.83.38.1.8.07 1.17-.03-1.2-.24-2.1-1.3-2.1-2.58v-.05c.35.2.75.32 1.18.33-.7-.47-1.17-1.28-1.17-2.2 0-.47.13-.92.36-1.3C7.94 8.85 9.88 9.9 12.06 10c-.04-.2-.06-.4-.06-.6 0-1.46 1.18-2.63 2.63-2.63.76 0 1.44.3 1.92.82.6-.12 1.95-.27 1.95-.27-.35.53-.72 1.66-1.24 2.04z"/></svg>
+    </div>شارك</div>
+</a>
+
+	
+
+<!-- Sharingbutton Tumblr -->
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=أجيال السلام الأولى عربيا و25 عالميا كأفضل منظمة اجتماعية خيرية&amp;canonicalUrl=https://www.youtube.com/watch?v=L7-OTrOv5J8&amp;shareSource=tumblr_share_button" target="_blank" rel="noopener" aria-label="Share on Tumblr">
+  <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+        <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M15.492,17.616C11.401,19.544,9.5,17,9.5,14.031 V9.5h-2V8.142c0.549-0.178,1.236-0.435,1.627-0.768c0.393-0.334,0.707-0.733,0.943-1.2c0.238-0.467,0.401-0.954,0.49-1.675H12.5v3h2 v2h-2v3.719c0,2.468,1.484,2.692,2.992,1.701V17.616z"/>
+     </svg>
+    </div>شارك</div>
+</a>
+
+
+
+<!-- Sharingbutton Pinterest -->
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https://www.youtube.com/watch?v=L7-OTrOv5J8.&amp;description=أجيال السلام الأولى عربيا و25 عالميا كأفضل منظمة اجتماعية خيرية" target="_blank" rel="noopener" aria-label="Share on Pinterest">
+  <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm1.4 15.56c-1 0-1.94-.53-2.25-1.14l-.65 2.52c-.4 1.45-1.57 2.9-1.66 3-.06.1-.2.07-.22-.04-.02-.2-.32-2 .03-3.5l1.18-5s-.3-.6-.3-1.46c0-1.36.8-2.37 1.78-2.37.85 0 1.25.62 1.25 1.37 0 .85-.53 2.1-.8 3.27-.24.98.48 1.78 1.44 1.78 1.73 0 2.9-2.24 2.9-4.9 0-2-1.35-3.5-3.82-3.5-2.8 0-4.53 2.07-4.53 4.4 0 .5.1.9.25 1.23l-1.5.82c-.36-.64-.54-1.43-.54-2.28 0-2.6 2.2-5.74 6.57-5.74 3.5 0 5.82 2.54 5.82 5.27 0 3.6-2 6.3-4.96 6.3z"/></svg>
+    </div>شارك</div>
+</a>
+</div>
+	 
+
+	
+	<br><br><br>
+
+	<div class="w3-container" style="text-align:right;margin-top:12px;">
+  <span class="w3-tag w3-xlarge w3-red w3-text-white ">مرتبطة</span>
+
+  <span class="w3-tag w3-xlarge ">موضوعات</span>
+  
+
+</div>
+	
+	 
+	
+	
+
+
+<div style="display:none" class="card3">
+<iframe  
+ src="https://www.youtube.com/embed/2o03GDvrm_k"
+ title="YouTube video player" frameborder="0" allow="accelerometer; 
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+ allowfullscreen></iframe>
+	
+<div>
+<a href="">
+<img src="elon.png" alt="Avatar" style="width:60px;float:right">
+</a>
+<p>أفادت تقارير بأن سبيس إكس، فصلت الموظفين الذين أصدروا خطابًا مفتوحًا هذا الأسبوع ينتقدون فيه الرئيس التنفيذي إيلون ماسك، مشيرين إلى سلوك الأخير باعتباره مصدر إحراج وإلهاء للشركة، وفقًا لموقع نيويورك بوست.
+
+  قال رئيس سبيس إكس وحليف ماسك، جوين شوتويل، في مذكرة إن الشركة "أنهت عددًا من الموظفين المشاركين" في صياغة الخطاب - مشيرًا إلى أن العمال المعنيين قد "أزعجوا الكثيرين" بـ "طلب غير مرغوب فيه" لإضافة توقيعاتهم.
+<a href="">
+  <button class="w3-button w3-blue w3-round-large" style="float:left;"> المزيد</button>
+</a>
+</p>
+<br>
+
+</div>
+		<!-- Sharingbutton Facebook -->
+<a class="resp-sharing-button__link"    href="https://facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Facebook">
+  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm3.6 11.5h-2.1v7h-3v-7h-2v-2h2V8.34c0-1.1.35-2.82 2.65-2.82h2.35v2.3h-1.4c-.25 0-.6.13-.6.66V9.5h2.34l-.24 2z"/></svg>
+    </div>شارك</div>
+</a>
+	
+
+<!-- Sharingbutton Twitter -->
+	
+<a class="resp-sharing-button__link " href="https://twitter.com/intent/tweet/?text=موضةازياءربيع 2022&amp;url=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Twitter">
+  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm5.26 9.38v.34c0 3.48-2.64 7.5-7.48 7.5-1.48 0-2.87-.44-4.03-1.2 1.37.17 2.77-.2 3.9-1.08-1.16-.02-2.13-.78-2.46-1.83.38.1.8.07 1.17-.03-1.2-.24-2.1-1.3-2.1-2.58v-.05c.35.2.75.32 1.18.33-.7-.47-1.17-1.28-1.17-2.2 0-.47.13-.92.36-1.3C7.94 8.85 9.88 9.9 12.06 10c-.04-.2-.06-.4-.06-.6 0-1.46 1.18-2.63 2.63-2.63.76 0 1.44.3 1.92.82.6-.12 1.95-.27 1.95-.27-.35.53-.72 1.66-1.24 2.04z"/></svg>
+    </div>شارك</div>
+</a>
+
+	
+
+<!-- Sharingbutton Tumblr -->
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=موضةازياءربيع 2022&amp;canonicalUrl=https://www.youtube.com/watch?v=nm1J3_qx7Vw&amp;shareSource=tumblr_share_button" target="_blank" rel="noopener" aria-label="Share on Tumblr">
+  <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+        <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M15.492,17.616C11.401,19.544,9.5,17,9.5,14.031 V9.5h-2V8.142c0.549-0.178,1.236-0.435,1.627-0.768c0.393-0.334,0.707-0.733,0.943-1.2c0.238-0.467,0.401-0.954,0.49-1.675H12.5v3h2 v2h-2v3.719c0,2.468,1.484,2.692,2.992,1.701V17.616z"/>
+     </svg>
+    </div>شارك</div>
+</a>
+
+
+
+<!-- Sharingbutton Pinterest -->
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https://www.youtube.com/watch?v=nm1J3_qx7Vw.&amp;description=موضةازياءربيع 2022" target="_blank" rel="noopener" aria-label="Share on Pinterest">
+  <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm1.4 15.56c-1 0-1.94-.53-2.25-1.14l-.65 2.52c-.4 1.45-1.57 2.9-1.66 3-.06.1-.2.07-.22-.04-.02-.2-.32-2 .03-3.5l1.18-5s-.3-.6-.3-1.46c0-1.36.8-2.37 1.78-2.37.85 0 1.25.62 1.25 1.37 0 .85-.53 2.1-.8 3.27-.24.98.48 1.78 1.44 1.78 1.73 0 2.9-2.24 2.9-4.9 0-2-1.35-3.5-3.82-3.5-2.8 0-4.53 2.07-4.53 4.4 0 .5.1.9.25 1.23l-1.5.82c-.36-.64-.54-1.43-.54-2.28 0-2.6 2.2-5.74 6.57-5.74 3.5 0 5.82 2.54 5.82 5.27 0 3.6-2 6.3-4.96 6.3z"/></svg>
+    </div>شارك</div>
+</a>
+</div>
+
+
+
+<div style="display:none" class="card3">
+<iframe  
+ src="https://www.youtube.com/embed/2o03GDvrm_k"
+ title="YouTube video player" frameborder="0" allow="accelerometer; 
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+ allowfullscreen></iframe>
+	
+<div>
+
+    <a href="">
+      <img src="elon.png" alt="Avatar" style="width:60px;float:right;">
+      </a>
+
+<p>Elon Musk co-founded and leads Tesla, SpaceX, Neuralink and The Boring Company.
+As the co-founder and CEO of Tesla, Elon leads all product design,
+ engineering and global manufacturing of the company's electric vehicles, 
+battery products and solar energy products and leads Tesla, SpaceX, Neuralink and The Boring Company.
+As the co-founder and CEO of Tesla, Elon leads all product design,
+ engineering and global manufacturing of the company's electric vehicles, 
+battery products and solar energy products
+ 
+<a href="">
+  <button class="w3-button w3-blue w3-round-large" style="float:left"> المزيد </button>
+</a>
+</p>
+<br>
+
+</div>
+
+
+	<!-- Sharingbutton Facebook -->
+  <a class="resp-sharing-button__link"    href="https://facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Facebook">
+    <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm3.6 11.5h-2.1v7h-3v-7h-2v-2h2V8.34c0-1.1.35-2.82 2.65-2.82h2.35v2.3h-1.4c-.25 0-.6.13-.6.66V9.5h2.34l-.24 2z"/></svg>
+      </div>شارك</div>
+  </a>
+    
+  
+  <!-- Sharingbutton Twitter -->
+    
+  <a class="resp-sharing-button__link " href="https://twitter.com/intent/tweet/?text=موضةازياءربيع 2022&amp;url=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Twitter">
+    <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm5.26 9.38v.34c0 3.48-2.64 7.5-7.48 7.5-1.48 0-2.87-.44-4.03-1.2 1.37.17 2.77-.2 3.9-1.08-1.16-.02-2.13-.78-2.46-1.83.38.1.8.07 1.17-.03-1.2-.24-2.1-1.3-2.1-2.58v-.05c.35.2.75.32 1.18.33-.7-.47-1.17-1.28-1.17-2.2 0-.47.13-.92.36-1.3C7.94 8.85 9.88 9.9 12.06 10c-.04-.2-.06-.4-.06-.6 0-1.46 1.18-2.63 2.63-2.63.76 0 1.44.3 1.92.82.6-.12 1.95-.27 1.95-.27-.35.53-.72 1.66-1.24 2.04z"/></svg>
+      </div>شارك</div>
+  </a>
+  
+    
+  
+  <!-- Sharingbutton Tumblr -->
+  <a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=موضةازياءربيع 2022&amp;canonicalUrl=https://www.youtube.com/watch?v=nm1J3_qx7Vw&amp;shareSource=tumblr_share_button" target="_blank" rel="noopener" aria-label="Share on Tumblr">
+    <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+      <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+          <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M15.492,17.616C11.401,19.544,9.5,17,9.5,14.031 V9.5h-2V8.142c0.549-0.178,1.236-0.435,1.627-0.768c0.393-0.334,0.707-0.733,0.943-1.2c0.238-0.467,0.401-0.954,0.49-1.675H12.5v3h2 v2h-2v3.719c0,2.468,1.484,2.692,2.992,1.701V17.616z"/>
+       </svg>
+      </div>شارك</div>
+  </a>
+  
+  
+  
+  <!-- Sharingbutton Pinterest -->
+  <a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https://www.youtube.com/watch?v=nm1J3_qx7Vw.&amp;description=موضةازياءربيع 2022" target="_blank" rel="noopener" aria-label="Share on Pinterest">
+    <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm1.4 15.56c-1 0-1.94-.53-2.25-1.14l-.65 2.52c-.4 1.45-1.57 2.9-1.66 3-.06.1-.2.07-.22-.04-.02-.2-.32-2 .03-3.5l1.18-5s-.3-.6-.3-1.46c0-1.36.8-2.37 1.78-2.37.85 0 1.25.62 1.25 1.37 0 .85-.53 2.1-.8 3.27-.24.98.48 1.78 1.44 1.78 1.73 0 2.9-2.24 2.9-4.9 0-2-1.35-3.5-3.82-3.5-2.8 0-4.53 2.07-4.53 4.4 0 .5.1.9.25 1.23l-1.5.82c-.36-.64-.54-1.43-.54-2.28 0-2.6 2.2-5.74 6.57-5.74 3.5 0 5.82 2.54 5.82 5.27 0 3.6-2 6.3-4.96 6.3z"/></svg>
+      </div>شارك</div>
+  </a>
+  </div>
+
+
+
+<div style="display:none" class="card3">
+<iframe  
+ src="https://www.youtube.com/embed/2o03GDvrm_k"
+ title="YouTube video player" frameborder="0" allow="accelerometer; 
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+ allowfullscreen></iframe>
+	
+	<div>
+
+    <a href="">
+      <img src="elon.png" alt="Avatar" style="width:60px;float:right">
+      </a>
+
+<p>Elon Musk co-founded and leads Tesla, SpaceX, Neuralink and The Boring Company.
+As the co-founder and CEO of Tesla, Elon leads all product design,
+ engineering and global manufacturing of the company's electric vehicles, 
+battery products and solar energy products and leads Tesla, SpaceX, Neuralink and The Boring Company.
+As the co-founder and CEO of Tesla, Elon leads all product design,
+ engineering and global manufacturing of the company's electric vehicles, 
+battery products and solar energy products
+ 
+<a href="">
+  <button class="w3-button w3-blue w3-round-large" style="float:left"> المزيد </button>
+</a>
+</p>
+<br>
+
+</div>
+	<!-- Sharingbutton Facebook -->
+<a class="resp-sharing-button__link"    href="https://facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Facebook">
+  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm3.6 11.5h-2.1v7h-3v-7h-2v-2h2V8.34c0-1.1.35-2.82 2.65-2.82h2.35v2.3h-1.4c-.25 0-.6.13-.6.66V9.5h2.34l-.24 2z"/></svg>
+    </div>شارك</div>
+</a>
+	
+
+<!-- Sharingbutton Twitter -->
+	
+<a class="resp-sharing-button__link " href="https://twitter.com/intent/tweet/?text=موضةازياءربيع 2022&amp;url=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Twitter">
+  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm5.26 9.38v.34c0 3.48-2.64 7.5-7.48 7.5-1.48 0-2.87-.44-4.03-1.2 1.37.17 2.77-.2 3.9-1.08-1.16-.02-2.13-.78-2.46-1.83.38.1.8.07 1.17-.03-1.2-.24-2.1-1.3-2.1-2.58v-.05c.35.2.75.32 1.18.33-.7-.47-1.17-1.28-1.17-2.2 0-.47.13-.92.36-1.3C7.94 8.85 9.88 9.9 12.06 10c-.04-.2-.06-.4-.06-.6 0-1.46 1.18-2.63 2.63-2.63.76 0 1.44.3 1.92.82.6-.12 1.95-.27 1.95-.27-.35.53-.72 1.66-1.24 2.04z"/></svg>
+    </div>شارك</div>
+</a>
+
+	
+
+<!-- Sharingbutton Tumblr -->
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=موضةازياءربيع 2022&amp;canonicalUrl=https://www.youtube.com/watch?v=nm1J3_qx7Vw&amp;shareSource=tumblr_share_button" target="_blank" rel="noopener" aria-label="Share on Tumblr">
+  <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+        <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M15.492,17.616C11.401,19.544,9.5,17,9.5,14.031 V9.5h-2V8.142c0.549-0.178,1.236-0.435,1.627-0.768c0.393-0.334,0.707-0.733,0.943-1.2c0.238-0.467,0.401-0.954,0.49-1.675H12.5v3h2 v2h-2v3.719c0,2.468,1.484,2.692,2.992,1.701V17.616z"/>
+     </svg>
+    </div>شارك</div>
+</a>
+
+
+
+<!-- Sharingbutton Pinterest -->
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https://www.youtube.com/watch?v=nm1J3_qx7Vw.&amp;description=موضةازياءربيع 2022" target="_blank" rel="noopener" aria-label="Share on Pinterest">
+  <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm1.4 15.56c-1 0-1.94-.53-2.25-1.14l-.65 2.52c-.4 1.45-1.57 2.9-1.66 3-.06.1-.2.07-.22-.04-.02-.2-.32-2 .03-3.5l1.18-5s-.3-.6-.3-1.46c0-1.36.8-2.37 1.78-2.37.85 0 1.25.62 1.25 1.37 0 .85-.53 2.1-.8 3.27-.24.98.48 1.78 1.44 1.78 1.73 0 2.9-2.24 2.9-4.9 0-2-1.35-3.5-3.82-3.5-2.8 0-4.53 2.07-4.53 4.4 0 .5.1.9.25 1.23l-1.5.82c-.36-.64-.54-1.43-.54-2.28 0-2.6 2.2-5.74 6.57-5.74 3.5 0 5.82 2.54 5.82 5.27 0 3.6-2 6.3-4.96 6.3z"/></svg>
+    </div>شارك</div>
+</a>
+</div>
+
+
+
+<div style="display:none" class="card3">
+<iframe  
+ src="https://www.youtube.com/embed/2o03GDvrm_k"
+ title="YouTube video player" frameborder="0" allow="accelerometer; 
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+ allowfullscreen></iframe>
+	
+	<div>
+
+    <a href="">
+      <img src="elon.png" alt="Avatar" style="width:60px;float:right">
+      </a>
+
+<p>Elon Musk co-founded and leads Tesla, SpaceX, Neuralink and The Boring Company.
+As the co-founder and CEO of Tesla, Elon leads all product design,
+ engineering and global manufacturing of the company's electric vehicles, 
+battery products and solar energy products and leads Tesla, SpaceX, Neuralink and The Boring Company.
+As the co-founder and CEO of Tesla, Elon leads all product design,
+ engineering and global manufacturing of the company's electric vehicles, 
+battery products and solar energy products
+ 
+<a href="">
+  <button class="w3-button w3-blue w3-round-large" style="float:left;"> المزيد </button>
+</a>
+</p>
+<br>
+
+</div>
+		<!-- Sharingbutton Facebook -->
+<a class="resp-sharing-button__link"    href="https://facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Facebook">
+  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm3.6 11.5h-2.1v7h-3v-7h-2v-2h2V8.34c0-1.1.35-2.82 2.65-2.82h2.35v2.3h-1.4c-.25 0-.6.13-.6.66V9.5h2.34l-.24 2z"/></svg>
+    </div>شارك</div>
+</a>
+	
+
+<!-- Sharingbutton Twitter -->
+	
+<a class="resp-sharing-button__link " href="https://twitter.com/intent/tweet/?text=موضةازياءربيع 2022&amp;url=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Twitter">
+  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm5.26 9.38v.34c0 3.48-2.64 7.5-7.48 7.5-1.48 0-2.87-.44-4.03-1.2 1.37.17 2.77-.2 3.9-1.08-1.16-.02-2.13-.78-2.46-1.83.38.1.8.07 1.17-.03-1.2-.24-2.1-1.3-2.1-2.58v-.05c.35.2.75.32 1.18.33-.7-.47-1.17-1.28-1.17-2.2 0-.47.13-.92.36-1.3C7.94 8.85 9.88 9.9 12.06 10c-.04-.2-.06-.4-.06-.6 0-1.46 1.18-2.63 2.63-2.63.76 0 1.44.3 1.92.82.6-.12 1.95-.27 1.95-.27-.35.53-.72 1.66-1.24 2.04z"/></svg>
+    </div>شارك</div>
+</a>
+
+	
+
+<!-- Sharingbutton Tumblr -->
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=موضةازياءربيع 2022&amp;canonicalUrl=https://www.youtube.com/watch?v=nm1J3_qx7Vw&amp;shareSource=tumblr_share_button" target="_blank" rel="noopener" aria-label="Share on Tumblr">
+  <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+        <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M15.492,17.616C11.401,19.544,9.5,17,9.5,14.031 V9.5h-2V8.142c0.549-0.178,1.236-0.435,1.627-0.768c0.393-0.334,0.707-0.733,0.943-1.2c0.238-0.467,0.401-0.954,0.49-1.675H12.5v3h2 v2h-2v3.719c0,2.468,1.484,2.692,2.992,1.701V17.616z"/>
+     </svg>
+    </div>شارك</div>
+</a>
+
+
+
+<!-- Sharingbutton Pinterest -->
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https://www.youtube.com/watch?v=nm1J3_qx7Vw.&amp;description=موضةازياءربيع 2022" target="_blank" rel="noopener" aria-label="Share on Pinterest">
+  <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm1.4 15.56c-1 0-1.94-.53-2.25-1.14l-.65 2.52c-.4 1.45-1.57 2.9-1.66 3-.06.1-.2.07-.22-.04-.02-.2-.32-2 .03-3.5l1.18-5s-.3-.6-.3-1.46c0-1.36.8-2.37 1.78-2.37.85 0 1.25.62 1.25 1.37 0 .85-.53 2.1-.8 3.27-.24.98.48 1.78 1.44 1.78 1.73 0 2.9-2.24 2.9-4.9 0-2-1.35-3.5-3.82-3.5-2.8 0-4.53 2.07-4.53 4.4 0 .5.1.9.25 1.23l-1.5.82c-.36-.64-.54-1.43-.54-2.28 0-2.6 2.2-5.74 6.57-5.74 3.5 0 5.82 2.54 5.82 5.27 0 3.6-2 6.3-4.96 6.3z"/></svg>
+    </div>شارك</div>
+</a>
+</div>
+
+
+
+<div style="display:none" class="card3">
+<iframe  
+ src="https://www.youtube.com/embed/2o03GDvrm_k"
+ title="YouTube video player" frameborder="0" allow="accelerometer; 
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+ allowfullscreen></iframe>
+	
+	<div>
+
+    <a href="">
+      <img src="elon.png" alt="Avatar" style="width:60px;float:right">
+      </a>
+
+<p>Elon Musk co-founded and leads Tesla, SpaceX, Neuralink and The Boring Company.
+As the co-founder and CEO of Tesla, Elon leads all product design,
+ engineering and global manufacturing of the company's electric vehicles, 
+battery products and solar energy products and leads Tesla, SpaceX, Neuralink and The Boring Company.
+As the co-founder and CEO of Tesla, Elon leads all product design,
+ engineering and global manufacturing of the company's electric vehicles, 
+battery products and solar energy products
+ 
+<a href="">
+  <button class="w3-button w3-blue w3-round-large" style="float:left"> المزيد </button>
+</a>
+</p>
+<br>
+
+</div>
+	<!-- Sharingbutton Facebook -->
+  <a class="resp-sharing-button__link"    href="https://facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Facebook">
+    <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm3.6 11.5h-2.1v7h-3v-7h-2v-2h2V8.34c0-1.1.35-2.82 2.65-2.82h2.35v2.3h-1.4c-.25 0-.6.13-.6.66V9.5h2.34l-.24 2z"/></svg>
+      </div>شارك</div>
+  </a>
+    
+  
+  <!-- Sharingbutton Twitter -->
+    
+  <a class="resp-sharing-button__link " href="https://twitter.com/intent/tweet/?text=موضةازياءربيع 2022&amp;url=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Twitter">
+    <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm5.26 9.38v.34c0 3.48-2.64 7.5-7.48 7.5-1.48 0-2.87-.44-4.03-1.2 1.37.17 2.77-.2 3.9-1.08-1.16-.02-2.13-.78-2.46-1.83.38.1.8.07 1.17-.03-1.2-.24-2.1-1.3-2.1-2.58v-.05c.35.2.75.32 1.18.33-.7-.47-1.17-1.28-1.17-2.2 0-.47.13-.92.36-1.3C7.94 8.85 9.88 9.9 12.06 10c-.04-.2-.06-.4-.06-.6 0-1.46 1.18-2.63 2.63-2.63.76 0 1.44.3 1.92.82.6-.12 1.95-.27 1.95-.27-.35.53-.72 1.66-1.24 2.04z"/></svg>
+      </div>شارك</div>
+  </a>
+  
+    
+  
+  <!-- Sharingbutton Tumblr -->
+  <a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=موضةازياءربيع 2022&amp;canonicalUrl=https://www.youtube.com/watch?v=nm1J3_qx7Vw&amp;shareSource=tumblr_share_button" target="_blank" rel="noopener" aria-label="Share on Tumblr">
+    <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+      <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+          <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M15.492,17.616C11.401,19.544,9.5,17,9.5,14.031 V9.5h-2V8.142c0.549-0.178,1.236-0.435,1.627-0.768c0.393-0.334,0.707-0.733,0.943-1.2c0.238-0.467,0.401-0.954,0.49-1.675H12.5v3h2 v2h-2v3.719c0,2.468,1.484,2.692,2.992,1.701V17.616z"/>
+       </svg>
+      </div>شارك</div>
+  </a>
+  
+  
+  
+  <!-- Sharingbutton Pinterest -->
+  <a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https://www.youtube.com/watch?v=nm1J3_qx7Vw.&amp;description=موضةازياءربيع 2022" target="_blank" rel="noopener" aria-label="Share on Pinterest">
+    <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm1.4 15.56c-1 0-1.94-.53-2.25-1.14l-.65 2.52c-.4 1.45-1.57 2.9-1.66 3-.06.1-.2.07-.22-.04-.02-.2-.32-2 .03-3.5l1.18-5s-.3-.6-.3-1.46c0-1.36.8-2.37 1.78-2.37.85 0 1.25.62 1.25 1.37 0 .85-.53 2.1-.8 3.27-.24.98.48 1.78 1.44 1.78 1.73 0 2.9-2.24 2.9-4.9 0-2-1.35-3.5-3.82-3.5-2.8 0-4.53 2.07-4.53 4.4 0 .5.1.9.25 1.23l-1.5.82c-.36-.64-.54-1.43-.54-2.28 0-2.6 2.2-5.74 6.57-5.74 3.5 0 5.82 2.54 5.82 5.27 0 3.6-2 6.3-4.96 6.3z"/></svg>
+      </div>شارك</div>
+  </a>
+  </div>
+
+<div style="display:none" class="card3">
+<iframe  
+ src="https://www.youtube.com/embed/2o03GDvrm_k"
+ title="YouTube video player" frameborder="0" allow="accelerometer; 
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+ allowfullscreen></iframe>
+	
+	<div>
+
+    <a href="">
+      <img src="elon.png" alt="Avatar" style="width:60px;float:right;">
+      </a>
+
+<p>Elon Musk co-founded and leads Tesla, SpaceX, Neuralink and The Boring Company.
+As the co-founder and CEO of Tesla, Elon leads all product design,
+ engineering and global manufacturing of the company's electric vehicles, 
+battery products and solar energy products and leads Tesla, SpaceX, Neuralink and The Boring Company.
+As the co-founder and CEO of Tesla, Elon leads all product design,
+ engineering and global manufacturing of the company's electric vehicles, 
+battery products and solar energy products
+ 
+<a href="">
+  <button class="w3-button w3-blue w3-round-large" style="float:left"> المزيد </button>
+</a>
+</p>
+<br>
+
+</div>
+		<!-- Sharingbutton Facebook -->
+<a class="resp-sharing-button__link"    href="https://facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Facebook">
+  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm3.6 11.5h-2.1v7h-3v-7h-2v-2h2V8.34c0-1.1.35-2.82 2.65-2.82h2.35v2.3h-1.4c-.25 0-.6.13-.6.66V9.5h2.34l-.24 2z"/></svg>
+    </div>شارك</div>
+</a>
+	
+
+<!-- Sharingbutton Twitter -->
+	
+<a class="resp-sharing-button__link " href="https://twitter.com/intent/tweet/?text=موضةازياءربيع 2022&amp;url=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Twitter">
+  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm5.26 9.38v.34c0 3.48-2.64 7.5-7.48 7.5-1.48 0-2.87-.44-4.03-1.2 1.37.17 2.77-.2 3.9-1.08-1.16-.02-2.13-.78-2.46-1.83.38.1.8.07 1.17-.03-1.2-.24-2.1-1.3-2.1-2.58v-.05c.35.2.75.32 1.18.33-.7-.47-1.17-1.28-1.17-2.2 0-.47.13-.92.36-1.3C7.94 8.85 9.88 9.9 12.06 10c-.04-.2-.06-.4-.06-.6 0-1.46 1.18-2.63 2.63-2.63.76 0 1.44.3 1.92.82.6-.12 1.95-.27 1.95-.27-.35.53-.72 1.66-1.24 2.04z"/></svg>
+    </div>شارك</div>
+</a>
+
+	
+
+<!-- Sharingbutton Tumblr -->
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=موضةازياءربيع 2022&amp;canonicalUrl=https://www.youtube.com/watch?v=nm1J3_qx7Vw&amp;shareSource=tumblr_share_button" target="_blank" rel="noopener" aria-label="Share on Tumblr">
+  <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+        <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M15.492,17.616C11.401,19.544,9.5,17,9.5,14.031 V9.5h-2V8.142c0.549-0.178,1.236-0.435,1.627-0.768c0.393-0.334,0.707-0.733,0.943-1.2c0.238-0.467,0.401-0.954,0.49-1.675H12.5v3h2 v2h-2v3.719c0,2.468,1.484,2.692,2.992,1.701V17.616z"/>
+     </svg>
+    </div>شارك</div>
+</a>
+
+
+
+<!-- Sharingbutton Pinterest -->
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https://www.youtube.com/watch?v=nm1J3_qx7Vw.&amp;description=موضةازياءربيع 2022" target="_blank" rel="noopener" aria-label="Share on Pinterest">
+  <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm1.4 15.56c-1 0-1.94-.53-2.25-1.14l-.65 2.52c-.4 1.45-1.57 2.9-1.66 3-.06.1-.2.07-.22-.04-.02-.2-.32-2 .03-3.5l1.18-5s-.3-.6-.3-1.46c0-1.36.8-2.37 1.78-2.37.85 0 1.25.62 1.25 1.37 0 .85-.53 2.1-.8 3.27-.24.98.48 1.78 1.44 1.78 1.73 0 2.9-2.24 2.9-4.9 0-2-1.35-3.5-3.82-3.5-2.8 0-4.53 2.07-4.53 4.4 0 .5.1.9.25 1.23l-1.5.82c-.36-.64-.54-1.43-.54-2.28 0-2.6 2.2-5.74 6.57-5.74 3.5 0 5.82 2.54 5.82 5.27 0 3.6-2 6.3-4.96 6.3z"/></svg>
+    </div>شارك</div>
+</a>
+</div>
+
+
+<div style="display:none" class="card3">
+<iframe  
+ src="https://www.youtube.com/embed/2o03GDvrm_k"
+ title="YouTube video player" frameborder="0" allow="accelerometer; 
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+ allowfullscreen></iframe>
+	
+	<div>
+
+    <a href="">
+      <img src="elon.png" alt="Avatar" style="width:60px;float: right;">
+      </a>
+
+<p>Elon Musk co-founded and leads Tesla, SpaceX, Neuralink and The Boring Company.
+As the co-founder and CEO of Tesla, Elon leads all product design,
+ engineering and global manufacturing of the company's electric vehicles, 
+battery products and solar energy products and leads Tesla, SpaceX, Neuralink and The Boring Company.
+As the co-founder and CEO of Tesla, Elon leads all product design,
+ engineering and global manufacturing of the company's electric vehicles, 
+battery products and solar energy products
+ 
+<a href="">
+  <button class="w3-button w3-blue w3-round-large" style="float:left"> المزيد </button>
+</a>
+</p>
+<br>
+
+</div>
+	<!-- Sharingbutton Facebook -->
+  <a class="resp-sharing-button__link"    href="https://facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Facebook">
+    <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm3.6 11.5h-2.1v7h-3v-7h-2v-2h2V8.34c0-1.1.35-2.82 2.65-2.82h2.35v2.3h-1.4c-.25 0-.6.13-.6.66V9.5h2.34l-.24 2z"/></svg>
+      </div>شارك</div>
+  </a>
+    
+  
+  <!-- Sharingbutton Twitter -->
+    
+  <a class="resp-sharing-button__link " href="https://twitter.com/intent/tweet/?text=موضةازياءربيع 2022&amp;url=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Twitter">
+    <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm5.26 9.38v.34c0 3.48-2.64 7.5-7.48 7.5-1.48 0-2.87-.44-4.03-1.2 1.37.17 2.77-.2 3.9-1.08-1.16-.02-2.13-.78-2.46-1.83.38.1.8.07 1.17-.03-1.2-.24-2.1-1.3-2.1-2.58v-.05c.35.2.75.32 1.18.33-.7-.47-1.17-1.28-1.17-2.2 0-.47.13-.92.36-1.3C7.94 8.85 9.88 9.9 12.06 10c-.04-.2-.06-.4-.06-.6 0-1.46 1.18-2.63 2.63-2.63.76 0 1.44.3 1.92.82.6-.12 1.95-.27 1.95-.27-.35.53-.72 1.66-1.24 2.04z"/></svg>
+      </div>شارك</div>
+  </a>
+  
+    
+  
+  <!-- Sharingbutton Tumblr -->
+  <a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=موضةازياءربيع 2022&amp;canonicalUrl=https://www.youtube.com/watch?v=nm1J3_qx7Vw&amp;shareSource=tumblr_share_button" target="_blank" rel="noopener" aria-label="Share on Tumblr">
+    <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+      <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+          <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M15.492,17.616C11.401,19.544,9.5,17,9.5,14.031 V9.5h-2V8.142c0.549-0.178,1.236-0.435,1.627-0.768c0.393-0.334,0.707-0.733,0.943-1.2c0.238-0.467,0.401-0.954,0.49-1.675H12.5v3h2 v2h-2v3.719c0,2.468,1.484,2.692,2.992,1.701V17.616z"/>
+       </svg>
+      </div>شارك</div>
+  </a>
+  
+  
+  
+  <!-- Sharingbutton Pinterest -->
+  <a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https://www.youtube.com/watch?v=nm1J3_qx7Vw.&amp;description=موضةازياءربيع 2022" target="_blank" rel="noopener" aria-label="Share on Pinterest">
+    <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm1.4 15.56c-1 0-1.94-.53-2.25-1.14l-.65 2.52c-.4 1.45-1.57 2.9-1.66 3-.06.1-.2.07-.22-.04-.02-.2-.32-2 .03-3.5l1.18-5s-.3-.6-.3-1.46c0-1.36.8-2.37 1.78-2.37.85 0 1.25.62 1.25 1.37 0 .85-.53 2.1-.8 3.27-.24.98.48 1.78 1.44 1.78 1.73 0 2.9-2.24 2.9-4.9 0-2-1.35-3.5-3.82-3.5-2.8 0-4.53 2.07-4.53 4.4 0 .5.1.9.25 1.23l-1.5.82c-.36-.64-.54-1.43-.54-2.28 0-2.6 2.2-5.74 6.57-5.74 3.5 0 5.82 2.54 5.82 5.27 0 3.6-2 6.3-4.96 6.3z"/></svg>
+      </div>شارك</div>
+  </a>
+  </div>
+
+<div style="display:none" class="card3">
+<iframe  
+ src="https://www.youtube.com/embed/2o03GDvrm_k"
+ title="YouTube video player" frameborder="0" allow="accelerometer; 
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+ allowfullscreen></iframe>
+	
+	<div>
+
+    <a href="">
+      <img src="elon.png" alt="Avatar" style="width:60px;float:right">
+      </a>
+
+<p>Elon Musk co-founded and leads Tesla, SpaceX, Neuralink and The Boring Company.
+As the co-founder and CEO of Tesla, Elon leads all product design,
+ engineering and global manufacturing of the company's electric vehicles, 
+battery products and solar energy products and leads Tesla, SpaceX, Neuralink and The Boring Company.
+As the co-founder and CEO of Tesla, Elon leads all product design,
+ engineering and global manufacturing of the company's electric vehicles, 
+battery products and solar energy products
+ 
+<a href="">
+  <button class="w3-button w3-blue w3-round-large" style="float:left;"> المزيد </button>
+</a>
+</p>
+<br>
+
+</div>
+		<!-- Sharingbutton Facebook -->
+<a class="resp-sharing-button__link"    href="https://facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Facebook">
+  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm3.6 11.5h-2.1v7h-3v-7h-2v-2h2V8.34c0-1.1.35-2.82 2.65-2.82h2.35v2.3h-1.4c-.25 0-.6.13-.6.66V9.5h2.34l-.24 2z"/></svg>
+    </div>شارك</div>
+</a>
+	
+
+<!-- Sharingbutton Twitter -->
+	
+<a class="resp-sharing-button__link " href="https://twitter.com/intent/tweet/?text=موضةازياءربيع 2022&amp;url=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Twitter">
+  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm5.26 9.38v.34c0 3.48-2.64 7.5-7.48 7.5-1.48 0-2.87-.44-4.03-1.2 1.37.17 2.77-.2 3.9-1.08-1.16-.02-2.13-.78-2.46-1.83.38.1.8.07 1.17-.03-1.2-.24-2.1-1.3-2.1-2.58v-.05c.35.2.75.32 1.18.33-.7-.47-1.17-1.28-1.17-2.2 0-.47.13-.92.36-1.3C7.94 8.85 9.88 9.9 12.06 10c-.04-.2-.06-.4-.06-.6 0-1.46 1.18-2.63 2.63-2.63.76 0 1.44.3 1.92.82.6-.12 1.95-.27 1.95-.27-.35.53-.72 1.66-1.24 2.04z"/></svg>
+    </div>شارك</div>
+</a>
+
+	
+
+<!-- Sharingbutton Tumblr -->
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=موضةازياءربيع 2022&amp;canonicalUrl=https://www.youtube.com/watch?v=nm1J3_qx7Vw&amp;shareSource=tumblr_share_button" target="_blank" rel="noopener" aria-label="Share on Tumblr">
+  <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+        <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M15.492,17.616C11.401,19.544,9.5,17,9.5,14.031 V9.5h-2V8.142c0.549-0.178,1.236-0.435,1.627-0.768c0.393-0.334,0.707-0.733,0.943-1.2c0.238-0.467,0.401-0.954,0.49-1.675H12.5v3h2 v2h-2v3.719c0,2.468,1.484,2.692,2.992,1.701V17.616z"/>
+     </svg>
+    </div>شارك</div>
+</a>
+
+
+
+<!-- Sharingbutton Pinterest -->
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https://www.youtube.com/watch?v=nm1J3_qx7Vw.&amp;description=موضةازياءربيع 2022" target="_blank" rel="noopener" aria-label="Share on Pinterest">
+  <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm1.4 15.56c-1 0-1.94-.53-2.25-1.14l-.65 2.52c-.4 1.45-1.57 2.9-1.66 3-.06.1-.2.07-.22-.04-.02-.2-.32-2 .03-3.5l1.18-5s-.3-.6-.3-1.46c0-1.36.8-2.37 1.78-2.37.85 0 1.25.62 1.25 1.37 0 .85-.53 2.1-.8 3.27-.24.98.48 1.78 1.44 1.78 1.73 0 2.9-2.24 2.9-4.9 0-2-1.35-3.5-3.82-3.5-2.8 0-4.53 2.07-4.53 4.4 0 .5.1.9.25 1.23l-1.5.82c-.36-.64-.54-1.43-.54-2.28 0-2.6 2.2-5.74 6.57-5.74 3.5 0 5.82 2.54 5.82 5.27 0 3.6-2 6.3-4.96 6.3z"/></svg>
+    </div>شارك</div>
+</a>
+</div>
+
+
+
+<div style="display:none" class="card3">
+<iframe  
+ src="https://www.youtube.com/embed/2o03GDvrm_k"
+ title="YouTube video player" frameborder="0" allow="accelerometer; 
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+ allowfullscreen></iframe>
+	
+	<div>
+
+    <a href="">
+      <img src="elon.png" alt="Avatar" style="width:60px;float: right;">
+      </a>
+
+<p>Elon Musk co-founded and leads Tesla, SpaceX, Neuralink and The Boring Company.
+As the co-founder and CEO of Tesla, Elon leads all product design,
+ engineering and global manufacturing of the company's electric vehicles, 
+battery products and solar energy products and leads Tesla, SpaceX, Neuralink and The Boring Company.
+As the co-founder and CEO of Tesla, Elon leads all product design,
+ engineering and global manufacturing of the company's electric vehicles, 
+battery products and solar energy products
+ 
+<a href="">
+  <button class="w3-button w3-blue w3-round-large" style="float:left"> المزيد </button>
+</a>
+</p>
+<br>
+
+</div>
+		<!-- Sharingbutton Facebook -->
+<a class="resp-sharing-button__link"    href="https://facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Facebook">
+  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm3.6 11.5h-2.1v7h-3v-7h-2v-2h2V8.34c0-1.1.35-2.82 2.65-2.82h2.35v2.3h-1.4c-.25 0-.6.13-.6.66V9.5h2.34l-.24 2z"/></svg>
+    </div>شارك</div>
+</a>
+	
+
+<!-- Sharingbutton Twitter -->
+	
+<a class="resp-sharing-button__link " href="https://twitter.com/intent/tweet/?text=موضةازياءربيع 2022&amp;url=https://www.youtube.com/watch?v=nm1J3_qx7Vw" target="_blank" rel="noopener" aria-label="Share on Twitter">
+  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm5.26 9.38v.34c0 3.48-2.64 7.5-7.48 7.5-1.48 0-2.87-.44-4.03-1.2 1.37.17 2.77-.2 3.9-1.08-1.16-.02-2.13-.78-2.46-1.83.38.1.8.07 1.17-.03-1.2-.24-2.1-1.3-2.1-2.58v-.05c.35.2.75.32 1.18.33-.7-.47-1.17-1.28-1.17-2.2 0-.47.13-.92.36-1.3C7.94 8.85 9.88 9.9 12.06 10c-.04-.2-.06-.4-.06-.6 0-1.46 1.18-2.63 2.63-2.63.76 0 1.44.3 1.92.82.6-.12 1.95-.27 1.95-.27-.35.53-.72 1.66-1.24 2.04z"/></svg>
+    </div>شارك</div>
+</a>
+
+	
+
+<!-- Sharingbutton Tumblr -->
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=موضةازياءربيع 2022&amp;canonicalUrl=https://www.youtube.com/watch?v=nm1J3_qx7Vw&amp;shareSource=tumblr_share_button" target="_blank" rel="noopener" aria-label="Share on Tumblr">
+  <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+        <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M15.492,17.616C11.401,19.544,9.5,17,9.5,14.031 V9.5h-2V8.142c0.549-0.178,1.236-0.435,1.627-0.768c0.393-0.334,0.707-0.733,0.943-1.2c0.238-0.467,0.401-0.954,0.49-1.675H12.5v3h2 v2h-2v3.719c0,2.468,1.484,2.692,2.992,1.701V17.616z"/>
+     </svg>
+    </div>شارك</div>
+</a>
+
+
+
+<!-- Sharingbutton Pinterest -->
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https://www.youtube.com/watch?v=nm1J3_qx7Vw.&amp;description=موضةازياءربيع 2022" target="_blank" rel="noopener" aria-label="Share on Pinterest">
+  <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm1.4 15.56c-1 0-1.94-.53-2.25-1.14l-.65 2.52c-.4 1.45-1.57 2.9-1.66 3-.06.1-.2.07-.22-.04-.02-.2-.32-2 .03-3.5l1.18-5s-.3-.6-.3-1.46c0-1.36.8-2.37 1.78-2.37.85 0 1.25.62 1.25 1.37 0 .85-.53 2.1-.8 3.27-.24.98.48 1.78 1.44 1.78 1.73 0 2.9-2.24 2.9-4.9 0-2-1.35-3.5-3.82-3.5-2.8 0-4.53 2.07-4.53 4.4 0 .5.1.9.25 1.23l-1.5.82c-.36-.64-.54-1.43-.54-2.28 0-2.6 2.2-5.74 6.57-5.74 3.5 0 5.82 2.54 5.82 5.27 0 3.6-2 6.3-4.96 6.3z"/></svg>
+    </div>شارك</div>
+</a>
+</div>
+
+
+
+<br><br>
+	
+<div class="w3-container" style="text-align:center;margin-top:12px;">
+  <span class="w3-tag w3-jumbo w3-yellow">بها</span>
+
+  <span class="w3-tag w3-jumbo w3-blue ">موصى</span>
+  
+  
+</div>
+	
+
+
+<iframe style="border:none;width: 100%;height: 100%;" src="../../links/links2.html"></iframe>
+
+
+
+	</div>
+
+  <div class="c">  
+	  
+
+	  
+	  
+
+</div>
+	
+	<br>
+	<br>
+	<br>
+   
+
+
+
+
+<!-- END MAIN -->
+
+
+
+
+
+
+
+   
+
+<script src="../../js/app.js"> </script>
+
+	
+
+
+	
+	
+
+
+
+
+     
+</body>
+</html>
+
